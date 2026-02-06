@@ -8,12 +8,14 @@
     "dev:frontend": "vite --open",
     "dev:backend": "convex dev",
     "build": "vite build",
+    "start": "node server.js",
     "lint": "tsc -p convex -noEmit --pretty false && tsc -p . -noEmit --pretty false && convex dev --once && vite build"
   },
   "dependencies": {
     "@convex-dev/auth": "^0.0.80",
     "clsx": "^2.1.1",
     "convex": "^1.31.2",
+    "express": "^5.2.1",
     "lucide-react": "^0.563.0",
     "mongodb": "^7.1.0",
     "openai": "^6.18.0",
